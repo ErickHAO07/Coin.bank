@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 
 
 * {
@@ -56,5 +60,29 @@ header>nav>a {
     align-self: start;
     margin-right: auto;
     margin-left: 20px;
+
+}
+
+#backgroud-1 {
+    background-image: url(/Bank_Coin/img/Fundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 565px;
+    width: 100%;
+    display: flex;
+    flex-direction: row
+}
+
+#backgroud-1>h1 {
+    font: bold 1.2em Montserrat, poppins, sans-serif;
+    color: white;
+}
+
+
+
+#backgroud-1>h1>strong {
+    color: #FBC946;
+    font: bolder 2em Montserrat, poppins, sans-serif;
 
 }
