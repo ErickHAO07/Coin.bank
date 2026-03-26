@@ -9,7 +9,6 @@
     text-decoration: none;
 }
 
-
 header {
     background-image: linear-gradient(to right, #F7BD09, #FDDA51, #F9C115);
     padding: 20px 20px 8px 20px;
@@ -17,8 +16,9 @@ header {
     flex-direction: row;
     justify-content: end;
     font: 1em arial, open-sans, sans-serif;
-
-
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.367);
 }
 
 header>nav {
@@ -26,11 +26,10 @@ header>nav {
     gap: 20px;
     flex-direction: row;
     justify-content: end;
-
 }
 
 header>nav>a {
-    color: black;
+    color: #143959;
     text-decoration: none;
     align-self: last baseline;
     margin-bottom: 10px;
@@ -43,15 +42,13 @@ header>nav>a {
     padding: 7px;
     color: white;
     font-weight: bold;
-    box-shadow: 1.5px 2px 1.5px rgba(0, 0, 0, 0.235);
-
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.348);
 }
 
 #logo {
     align-self: start;
     margin-right: auto;
     margin-left: 20px;
-
 }
 
 #backgroud-1 {
@@ -65,12 +62,24 @@ header>nav>a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+}
 
+#g_titulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 560px;
+    height: auto;
+    margin-left: 80px;
+    margin-bottom: 120px;
+    margin-top: 50px;
 }
 
 .titulo_p {
-    font: bold 3.5em 'poppins', sans-serif;
+    font: bold 3.5em 'Montserrat', 'poppins', sans-serif;
     color: white;
+    line-height: 1.2;
+
 }
 
 #small {
@@ -84,29 +93,19 @@ header>nav>a {
 
 #paragrafo {
     color: white;
-    font: 1.2em 'poppins', sans-serif;
+    font: 1.2em 'Montserrat', 'poppins', sans-serif;
+}
+
+#linha {
+    background-color: white;
+    width: 100%;
+    height: 1px;
 }
 
 #g_titulo>input {
-    font: 1em 'poppins', sans-serif;
+    font: bold 1.5em 'Montserrat', 'poppins', sans-serif;
     width: 300px;
     height: 60px;
-    padding: 0px;
     margin-top: 25px;
-
-
-
-}
-
-
-#g_titulo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 560px;
-    height: auto;
-    margin-left: 100px;
-    margin-bottom: 100px;
-
-
+    letter-spacing: 1px;
 }
