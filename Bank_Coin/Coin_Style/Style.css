@@ -109,3 +109,37 @@ header>nav>a {
     margin-top: 25px;
     letter-spacing: 1px;
 }
+
+#menu-2 {
+    background-color: rgb(225, 221, 221);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10%;
+    align-items: center;
+
+
+
+}
+
+.imgs {
+    width: 55px;
+    height: 55px;
+
+
+
+}
+
+#opc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 500px;
+
+
+
+}
+
+.opc>a>h2 {}
