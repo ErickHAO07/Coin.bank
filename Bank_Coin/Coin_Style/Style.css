@@ -44,13 +44,13 @@ header>nav>a {
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.348);
 }
 
-#logo {
+#logo_favicon {
     align-self: start;
     margin-right: auto;
     margin-left: 20px;
 }
 
-#backgroud-1 {
+#secao-1 {
     background-image: url(/Bank_Coin/img/Fundo1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +63,7 @@ header>nav>a {
     justify-content: center;
 }
 
-#g_titulo {
+#titulo-principal {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -95,13 +95,13 @@ header>nav>a {
     font: 1.2em 'Montserrat', 'poppins', sans-serif;
 }
 
-#linha {
-    background-color: white;
+.linha {
+    background-color: black;
     width: 100%;
     height: 1px;
 }
 
-#g_titulo>input {
+#titulo-principal>input {
     font: bold 1.5em 'Montserrat', 'poppins', sans-serif;
     width: 300px;
     height: 60px;
@@ -128,7 +128,7 @@ header>nav>a {
 
 }
 
-.opc {
+.vantagens {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -137,26 +137,44 @@ header>nav>a {
 
 }
 
-.opc>div>h2 {
+.vantagens>div>h2 {
     font: bolder 1.3em 'Montserrat', 'poppins', sans-serif;
-    color: darkblue;
+    color: #143959;
+    ;
     align-self: first baseline;
 
 }
 
-.opc>div>p {
-    color: rgba(9, 9, 205, 0.728);
+.vantagens>div>p {
+    color: rgba(0, 0, 139, 0.78);
     font: 600 0.9em 'Montserrat', 'poppins', sans-serif;
 
 }
 
-.inside {
+.vantagens-texto {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: space-between;
+}
+
+#secao_2 {
+    background-image: url(../img/Background-2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+}
+
+#titulo_secao-2 {
+    font: bold 2em 'Montserrat', 'poppins', sans-serif;
+    color: #143959;
 
 
 }
+
+#phone_background-2 {}
