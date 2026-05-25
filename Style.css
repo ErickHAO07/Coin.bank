@@ -11,10 +11,11 @@
 
 header {
     background-image: linear-gradient(to right, #F7BD09, #FDDA51, #F9C115);
-    padding: 20px 20px 8px 20px;
     display: flex;
+    height: 60px;
+    width: 100%;
     flex-direction: row;
-    justify-content: end;
+    align-items: flex-end;
     font: bolder 1.15em arial, open-sans, sans-serif;
     position: relative;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.367);
@@ -25,6 +26,7 @@ header>nav {
     gap: 20px;
     flex-direction: row;
     justify-content: end;
+    margin-right: 15px;
 }
 
 header>nav>a {
@@ -48,10 +50,11 @@ header>nav>a {
     align-self: start;
     margin-right: auto;
     margin-left: 20px;
+    align-self: center;
 }
 
 #secao-1 {
-    background-image: url(img/Fundo1.png);
+    background-image: url(img/Fundo1.WebP);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -153,7 +156,7 @@ header>nav>a {
 }
 
 #secao_2 {
-    background-image: url(img/fundo2.1.png);
+    background-image: url(img/fundo2.1.WebP);
     font: 1em 'Montserrat', 'poppins', sans-serif;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -398,7 +401,7 @@ header>nav>a {
 }
 
 footer {
-    background-image: url(img/rodape-background.png);
+    background-image: url(img/rodape-background.WebP);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,3 +464,9 @@ footer {
     margin-bottom: 50px;
 
 }
+
+/* ================================================
+   MOBILE FIRST / AJUSTE PARA CELULARES (Até 480px)
+   ================================================ */
+
+@media (max-width: 480px) {}
