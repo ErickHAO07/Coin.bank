@@ -43,7 +43,7 @@ header {
     border-radius: 2px;
 }
 
-#header_menu {
+#header_links {
     display: flex;
     gap: 5%;
     flex-direction: row;
@@ -499,17 +499,34 @@ footer {
         min-width: 45px;
         color: #002855;
         width: 100%;
-        font-size: 1pem;
+        font-size: 1em;
 
     }
 
     .hamburguer_menu {
         display: flex;
         margin-right: 10px;
+
+
     }
 
-    #header_menu {
+    #header_links {
         display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #002855;
+        align-items: center;
+        padding: 20px 0px;
+        gap: 20px;
+        z-index: 1000;
+
+
+    }
+
+    #header_links.ativo {
+        display: flex;
     }
 
     #titulo-principal {
