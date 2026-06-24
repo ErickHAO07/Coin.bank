@@ -159,10 +159,9 @@ header>nav>a {
 .vantagens {
     /*vantagens refers to each item positioned within the flexbox agrupamento-vantagens-sc-1  */
     display: flex;
-    flex-direction: colum;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 10px;
 
 }
 
@@ -587,17 +586,38 @@ footer {
     }
 
     #agrupamento-vantagens-sc-1 {
-        width: 90%;
+        display: flex;
+        width: 94%;
+        height: 40%;
         margin: auto;
         background-color: white;
         border-radius: 10px;
         margin-top: -8%;
+
+
+    }
+
+    .vantagens {
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 0px 0px 5px;
+    }
+
+    .vantagens>div>h2 {
+        font: bolder 0.6em 'Montserrat', 'poppins', sans-serif;
+    }
+
+    .vantagens>div>p {
+        font: 600 0.5em 'Montserrat', 'poppins', sans-serif;
+
     }
 
     .imgs {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
 
 
