@@ -62,7 +62,7 @@ header>nav>a {
 }
 
 .botao {
-    background-image: linear-gradient(to top, #F28705, #fda708);
+    background-image: linear-gradient(to top, #F28705, #FCB901);
     border-radius: 8px;
     padding: 7px;
     color: white;
@@ -261,7 +261,7 @@ header>nav>a {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-evenly;
-    box-shadow: 1px 2px 4px rgba(61, 61, 61, 0.42);
+    box-shadow: 1px 2px 4px rgba(61, 61, 61, 0.035);
     width: 50%;
     height: auto;
     align-items: flex-start;
@@ -298,7 +298,7 @@ header>nav>a {
 
 #botao_sc-2 {
     width: 12%;
-    height: 4.8%;
+    height: 28%;
     background-color: #143959;
     color: white;
     font: 600 1.2em 'Montserrat', 'poppins', sans-serif;
@@ -308,12 +308,16 @@ header>nav>a {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.421);
 }
 
+#botao2_sc-2 {
+    display: none;
+}
+
 /* this is where section 3 begins*/
 
 #titulo-sc-3 {
     font: 600 1.5em 'Montserrat', 'poppins', sans-serif;
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 100px;
     justify-content: center;
     align-items: center;
@@ -346,7 +350,6 @@ header>nav>a {
     justify-content: space-around;
     border-radius: 8px;
     box-shadow: 1px 2px 4px rgba(61, 61, 61, 0.42);
-    margin-top: 10px;
     margin-bottom: 150px;
 }
 
@@ -404,7 +407,7 @@ header>nav>a {
 #email-registration-for-news>input[type="text"] {
     width: 300px;
     height: 40px;
-    box-shadow: 1px 2px 4px rgba(61, 61, 61, 0.42);
+    box-shadow: 1px 2px 3px rgba(61, 61, 61, 0.42);
     border-radius: 6px;
 }
 
@@ -417,7 +420,7 @@ header>nav>a {
 #email-registration-for-news>h2 {
     font: 700 1.4em 'Montserrat', 'poppins', sans-serif;
     color: #002855;
-    border-bottom: 3.5px solid yellow;
+    border-bottom: 2px solid #F29F05;
     margin-right: 30px;
     margin-top: 5px;
 
@@ -593,7 +596,7 @@ footer {
         background-color: white;
         border-radius: 10px;
         margin-top: -8%;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.361);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.101);
 
 
     }
@@ -646,11 +649,11 @@ footer {
         flex-direction: column;
         align-content: start;
         height: 200px;
-        border-radius: 10px;
+        border-radius: 23px;
         width: 94%;
         margin: auto;
         margin-top: 25px;
-        box-shadow: 1px 1.3px 4px rgba(0, 0, 0, 0.361);
+        box-shadow: 1px 1.3px 2px rgba(0, 0, 0, 0.181);
     }
 
     #titulo_inferior_sc-2 {
@@ -672,21 +675,34 @@ footer {
         width: 60%;
     }
 
-    #botao_sc-2 {
-        height: 13%;
-        width: 18%;
-        font-size: 0.6em;
-        border-radius: 5px;
-        background-image: linear-gradient(to top, #F28705, #fda708);
+    #buttons_sc_2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 20%;
+        gap: 10px;
+        margin: 15px 0px 0px 15px;
     }
 
+    #botao_sc-2,
+    .andro_button {
+        height: 80%;
+        width: 20%;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, #F28705, #FCB901);
+        font: 700 0.6em 'Montserrat', 'poppins', sans-serif;
+        box-shadow: 1px 1px 3px rgba(255, 166, 0, 0.402);
+        margin: 0;
+    }
 
+    #botao2_sc-2 {
+        display: block;
+        background-image: none;
+        background-color: rgb(255, 255, 255);
+        color: orange;
+        border: 2px solid orange;
 
-
-
-
-
-
+    }
 
     #line_section_2 {
         width: 98%;
@@ -704,8 +720,8 @@ footer {
     }
 
     .vantagens-secao-2>img {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     .vantagens-secao-2 {
@@ -730,31 +746,69 @@ footer {
         border: none;
     }
 
+    #titulo-sc-3 {
+        font-size: 0.7em;
+        white-space: nowrap;
+        height: 40px;
 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #last-section {
+    #titulo-sc-3::before,
+    #titulo-sc-3::after {
         display: none;
     }
+
+    #last-section {
+        width: 94%;
+        margin-bottom: 10px;
+
+    }
+
+    .img-sc-3 {
+        max-width: 50px;
+        max-width: 50px;
+    }
+
+    .minisecao-3 {}
+
+    .miniseca-3-titulo>h3 {
+        font-size: 0.7em;
+
+    }
+
+    .miniseca-3-titulo>p {
+        font-size: 0.5em;
+
+    }
+
+    #email-registration-for-news {
+        width: 94%;
+        padding: 0;
+
+    }
+
+
+    #email-registration-for-news>input[type="button"] {
+        width: 20%;
+        font-size: 0.8em;
+    }
+
+    #email-registration-for-news>input[type="text"] {}
+
+    #email-registration-for-news>input[type="text"]::placeholder {
+        font-size: 0.9em;
+    }
+
+    #email-registration-for-news>h2 {
+        font-size: 0.7em;
+        white-space: nowrap;
+        padding: 0px 0px 2px 0px;
+        margin: 0px 0px 0px 3px;
+
+
+
+    }
+
 
 
     #about-us_icons {
@@ -765,7 +819,5 @@ footer {
         width: 100px;
     }
 
-    #email-registration-for-news>input[type="button"] {
-        width: 0px;
-    }
+
 }
