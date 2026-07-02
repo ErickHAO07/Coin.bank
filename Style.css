@@ -94,7 +94,7 @@ header>nav>a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 560px;
+    width: 35%;
     height: auto;
     margin-left: 80px;
     margin-bottom: 120px;
@@ -130,7 +130,7 @@ header>nav>a {
 
 #titulo-principal>input {
     font: bold 1.5em 'Montserrat', 'poppins', sans-serif;
-    width: 300px;
+    width: 55%;
     height: 60px;
     margin-top: 25px;
     letter-spacing: 1px;
@@ -407,13 +407,15 @@ header>nav>a {
 #email-registration-for-news>input[type="text"] {
     width: 300px;
     height: 40px;
-    box-shadow: 1px 2px 3px rgba(61, 61, 61, 0.42);
+    box-shadow: 1px 1px 3px rgba(61, 61, 61, 0.312);
     border-radius: 6px;
 }
 
 #email-registration-for-news>input[type="text"]::placeholder {
     font: 700 1.2em 'Montserrat', 'poppins', sans-serif;
     color: rgba(128, 128, 128, 0.592);
+    padding-left: 5px;
+
 
 }
 
@@ -433,7 +435,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 400px;
+    height: 400px;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -542,7 +544,7 @@ footer {
     }
 
     #titulo-principal {
-        width: 100%;
+        width: 35%;
         height: auto;
         margin-left: 3%;
         display: flex;
@@ -561,11 +563,6 @@ footer {
         font-weight: 450;
     }
 
-    .titulo_p>strong {
-        color: #FBC946;
-        font-weight: bold
-    }
-
     #paragrafo {
         color: white;
         font: 400 1em 'Montserrat', 'poppins', sans-serif;
@@ -575,14 +572,13 @@ footer {
     }
 
     #linha_titulo-principal {
-        background-color: white;
-        width: 240%;
+        width: 145%;
         height: 1.5px;
     }
 
     #titulo-principal>input {
         font: bold 0.8em 'Montserrat', 'poppins', sans-serif;
-        width: 120%;
+        width: 100%;
         height: 20%;
         margin-top: 15px;
         letter-spacing: 0px;
@@ -769,6 +765,10 @@ footer {
         max-width: 50px;
     }
 
+    section {
+        margin-bottom: 70px;
+    }
+
     .minisecao-3 {}
 
     .miniseca-3-titulo>h3 {
@@ -782,18 +782,26 @@ footer {
     }
 
     #email-registration-for-news {
-        width: 94%;
-        padding: 0;
-
+        width: 93%;
+        padding: 0px 3px 0px 0px;
+        height: 40px;
+        align-self: first baseline;
+        margin-top: -30px;
     }
 
 
     #email-registration-for-news>input[type="button"] {
         width: 20%;
         font-size: 0.8em;
+        height: 80%;
     }
 
-    #email-registration-for-news>input[type="text"] {}
+    #email-registration-for-news>input[type="text"] {
+        width: 45%;
+        height: 80%;
+        font-size: 0.8em;
+
+    }
 
     #email-registration-for-news>input[type="text"]::placeholder {
         font-size: 0.9em;
@@ -805,19 +813,32 @@ footer {
         padding: 0px 0px 2px 0px;
         margin: 0px 0px 0px 3px;
 
+    }
+
+    footer {
+        background-image: url(img/Background_footer-android.png);
+        background-position: cover;
+        width: 100%;
+        height: 130px;
 
 
     }
 
+    #about-us_institutional {
+        width: 40%;
+        font-size: 0.7em;
 
+    }
 
     #about-us_icons {
-        display: none;
+        width: 40%;
     }
 
-    #titulo-principal {
-        width: 100px;
+    #about-us_icons>a>img {
+        width: 30px;
+        height: 30px;
     }
+
 
 
 }
