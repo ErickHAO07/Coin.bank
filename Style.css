@@ -67,7 +67,7 @@ header>nav>a {
     padding: 7px;
     color: white;
     font-weight: bold;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.348);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.235);
 }
 
 #logo {
@@ -390,7 +390,7 @@ header>nav>a {
     height: 70px;
     border-radius: 8px;
     background-color: white;
-    box-shadow: 1px 2px 4px rgba(61, 61, 61, 0.42);
+    box-shadow: 1px 1px 3px rgba(61, 61, 61, 0.208);
     margin: auto;
     gap: 10px;
     padding-left: 15px;
@@ -489,7 +489,7 @@ footer {
 
 #rights {
     font: 400 1em 'Montserrat', 'poppins', sans-serif;
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.4);
     margin-bottom: 50px;
 
 }
@@ -509,26 +509,38 @@ footer {
         display: flex;
         margin-right: 10px;
 
-    }
-
-    #header_links {
-        display: none;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background-color: #002855;
-        align-items: center;
-        padding: 20px 0px;
-        gap: 20px;
-        z-index: 1000;
-
 
     }
 
     #header_links.ativo {
         display: flex;
+        visibility: visible;
+        width: 50%;
+        height: 600px;
+        opacity: 1;
+        transform: translateY(0px);
+
     }
+
+    #header_links {
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #000000dd;
+        align-items: center;
+        padding: 0px 0px;
+        gap: 0px;
+        z-index: 1000;
+        transform: translateY(-20px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        pointer-events: auto;
+    }
+
+
 
     #secao-1 {
         background-image: url(img/Background_1-Phone.Webp);
@@ -766,7 +778,7 @@ footer {
     }
 
     section {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 
     .minisecao-3 {}
@@ -785,8 +797,8 @@ footer {
         width: 93%;
         padding: 0px 3px 0px 0px;
         height: 40px;
-        align-self: first baseline;
-        margin-top: -30px;
+        align-self: flex-start;
+
     }
 
 
@@ -817,26 +829,58 @@ footer {
 
     footer {
         background-image: url(img/Background_footer-android.png);
-        background-position: cover;
+        background-position: bottom;
+        background-size: 100% 70%;
         width: 100%;
-        height: 130px;
+        height: 180px;
+        align-items: center;
+        align-content: center;
 
+    }
+
+    #about-us {
+        flex-direction: column-reverse;
+        width: 80%;
+        height: auto;
+        margin: 5px 0px 3px 0px;
+        gap: 20px;
+        align-items: baseline;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
     }
 
     #about-us_institutional {
-        width: 40%;
-        font-size: 0.7em;
+        width: 100%;
+        font-size: 0.8em;
+        margin: 0px 0px 0px 0px;
+        gap: 5px;
+        align-items: first baseline;
+        justify-content: space-between;
 
+    }
+
+    #about-us_institutional>a {
+        padding: 0px 15px 0px 0px;
+        margin: 0px 0px 3px 0px;
+        color: rgba(255, 255, 255, 0.4);
     }
 
     #about-us_icons {
-        width: 40%;
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+
     }
 
     #about-us_icons>a>img {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
+        opacity: 0.6;
+    }
+
+    #rights {
+        font-size: 0.7em;
+        margin: 0;
     }
 
 
