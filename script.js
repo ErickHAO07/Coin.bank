@@ -4,6 +4,8 @@ function hamburguerMenu() {
 
     btnHamburguer.addEventListener('click', () => {
         navLinks.classList.toggle('ativo');
+        btnHamburguer.classList.toggle('ativo')
+
     });
 }
 hamburguerMenu()
