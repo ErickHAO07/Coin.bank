@@ -9,9 +9,6 @@
     text-decoration: none;
 }
 
-body {
-    width: 100%;
-}
 
 header {
     background-image: linear-gradient(to right, #F7BD09, #FDDA51, #F9C115);
@@ -94,10 +91,10 @@ header {
 }
 
 #secao-1 {
-    background-image: url(img/Fundo1.WebP);
+    background-image: url(img/Background_1-Phone.Webp);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    background-position: center bottom;
     height: 565px;
     width: 100%;
     display: flex;
@@ -118,7 +115,7 @@ header {
 }
 
 .titulo_p {
-    font: bold 3.5em 'Montserrat', 'poppins', sans-serif;
+    font: bold 4vw 'Montserrat', 'poppins', sans-serif;
     color: white;
     line-height: 1.2;
 
@@ -135,7 +132,7 @@ header {
 
 #paragrafo {
     color: white;
-    font: 1.2em 'Montserrat', 'poppins', sans-serif;
+    font: 1.7vw 'Montserrat', 'poppins', sans-serif;
 }
 
 #linha_titulo-principal {
@@ -145,7 +142,7 @@ header {
 }
 
 #titulo-principal>input {
-    font: bold 1.5em 'Montserrat', 'poppins', sans-serif;
+    font: bold 2vw 'Montserrat', 'poppins', sans-serif;
     width: 55%;
     height: 100%;
     margin-top: 2%;
@@ -154,7 +151,7 @@ header {
 
 #agrupamento-vantagens-sc-1 {
     /*agrupamento-vantagens-sc-1 = refers to the small grouping of advantages in section 1, located just below the background*/
-    background-color: rgba(225, 221, 221, 0.695);
+    background-color: whitesmoke;
     width: 100%;
     height: 50%;
     display: flex;
@@ -184,7 +181,7 @@ header {
 }
 
 .vantagens>div>h2 {
-    font: bolder 1.3em 'Montserrat', 'poppins', sans-serif;
+    font: bolder 1.5vw 'Montserrat', 'poppins', sans-serif;
     color: #143959;
     align-self: first baseline;
 
@@ -192,13 +189,13 @@ header {
 
 .vantagens>div>p {
     color: rgba(25, 25, 126);
-    font: 600 0.9em 'Montserrat', 'poppins', sans-serif;
+    font: 600 1vw 'Montserrat', 'poppins', sans-serif;
 
 }
 
 #secao_2 {
     background-image: url(img/fundo2.1.WebP);
-    font: 1em 'Montserrat', 'poppins', sans-serif;
+    font: 1.3vw 'Montserrat', 'poppins', sans-serif;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
@@ -209,7 +206,7 @@ header {
 }
 
 #titulo_secao-2 {
-    font: bold 1.4em 'Montserrat', 'poppins', sans-serif;
+    font: bold 1.5vw 'Montserrat', 'poppins', sans-serif;
     color: #002855;
     margin-top: 2.5%;
     margin-bottom: 5%;
@@ -251,8 +248,7 @@ header {
 .vantagens-secao-2>h3 {
     color: #002855;
     font-weight: 550;
-    font-size: 1.2em;
-    min-height: 3em;
+    font-size: 1.5vw;
 }
 
 .vantagens-secao-2>h3>strong {
@@ -270,7 +266,7 @@ header {
 .vantagens-secao-2>p {
     color: #002855;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1vw;
 
 }
 
@@ -500,8 +496,6 @@ footer {
     align-items: center;
     justify-content: space-between;
 
-
-
 }
 
 #rights {
@@ -512,17 +506,189 @@ footer {
 }
 
 /* ================================================
-   MOBILE FIRST / AJUSTE PARA CELULARES (Até 480px)
+   AJUSTE PARA CELULARES (Até 768px)
    ================================================ */
 
-@media (max-width: 480px) {
-    html {
-        width: 100%;
-    }
+@media (max-width: 768px) {
 
     header {
         color: #002855;
-        font-size: 1em;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #button_header {
+        display: none;
+    }
+
+    #logo {}
+
+    #header_links {
+        gap: 5%;
+        font-size: 2.5vw;
+        margin: 0% 2% 0% 0%;
+        padding: 0;
+    }
+
+    #secao-1 {
+        height: 420px;
+        background-position: center bottom;
+        background-size: 100% 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url(img/Background_1-Phone\(786px\).Webp);
+
+
+    }
+
+    #titulo-principal {
+        margin-top: 10%;
+
+    }
+
+    .titulo_p {
+        font-size: 5vw;
+    }
+
+    #paragrafo {
+        font-size: 2vw;
+    }
+
+    #linha_titulo-principal {
+        width: 95%;
+        height: 3px;
+    }
+
+    #agrupamento-vantagens-sc-1 {
+        display: flex;
+        width: 94%;
+        height: 40%;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: -8%;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.101);
+    }
+
+    .imgs {
+        width: 25%;
+        height: 25%;
+        margin: 0% 5% 0% 1%;
+
+    }
+
+    .vantagens>div>p {
+        font-size: 1.5vw;
+
+    }
+
+    .vantagens>div>h2 {
+        font-size: 2vw;
+    }
+
+    #titulo_secao-2 {
+        font-size: 2.5vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+
+    #secao_2 {
+        height: 600px;
+        background-image: none;
+        align-content: center;
+        justify-content: space-between;
+        gap: 2%;
+    }
+
+    .vantagens-secao-2 {
+        height: auto;
+    }
+
+    #Background_2_android {
+        background-image: url(img/Background_2_android_version.Webp);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        height: 60%;
+        border-radius: 23px;
+        width: 94%;
+        margin: auto;
+        box-shadow: 1px 1.3px 2px rgba(0, 0, 0, 0.181);
+    }
+
+
+    .vantagens-secao-2>img {
+        width: 45%;
+        height: 45%;
+    }
+
+    .vantagens-secao-2>hr {
+        display: none;
+    }
+
+    .vantagens-secao-2>h3 {
+        font-size: 2.8vw;
+    }
+
+    .vantagens-secao-2>p {
+        font-size: 2vw;
+
+    }
+
+    #vantagem-central_sc-2 {
+        border: none;
+    }
+
+
+
+
+    #agrupament-vantagens-sc2 {
+        width: auto;
+        justify-content: space-evenly;
+        margin: 0;
+        gap: 5%;
+        height: 40%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ================================================
+   AJUSTE PARA CELULARES (Até 480px)
+   ================================================ */
+
+@media (max-width: 480px) {
+
+    header {
+        color: #002855;
         height: auto;
         flex-wrap: wrap;
     }
@@ -594,7 +760,7 @@ footer {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
-        font-size: 1.2em;
+        font-size: 3vw;
         background-color: transparent;
         text-align: center;
         height: auto;
@@ -602,7 +768,6 @@ footer {
         padding: 0;
         border: 2px solid #FEC80B;
         border-radius: 7px;
-
     }
 
     #header_links.ativo {
@@ -611,15 +776,11 @@ footer {
         opacity: 1;
         transform: translateY(0px);
         pointer-events: auto;
-
     }
-
-
 
     #secao-1 {
         background-image: url(img/Background_1-Phone.Webp);
-        height: 75%;
-        width: 100%;
+        max-height: 300px;
         background-size: cover;
         background-position: center bottom;
         display: flex;
@@ -630,9 +791,10 @@ footer {
     }
 
     #titulo-principal {
-        width: 45%;
+        width: 50%;
         height: auto;
         margin-left: 3%;
+        margin-top: 15%;
         display: flex;
         flex-direction: column;
     }
@@ -675,11 +837,9 @@ footer {
         width: 94%;
         height: 40%;
         margin: auto;
-        background-color: white;
         border-radius: 10px;
         margin-top: -8%;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.101);
-
 
     }
 
@@ -688,54 +848,28 @@ footer {
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
-        gap: 5px;
-        padding: 5px 0px 0px 5px;
+        gap: 2%;
+        padding-left: 1%;
     }
 
     .vantagens>div>h2 {
-        font: bolder 2.3vw 'Montserrat', 'poppins', sans-serif;
+        font: bolder 2vw 'Montserrat', 'poppins', sans-serif;
     }
 
     .vantagens>div>p {
-        font: 600 1.8vw 'Montserrat', 'poppins', sans-serif;
+        font: 600 1.7vw 'Montserrat', 'poppins', sans-serif;
 
     }
 
     .imgs {
-        width: 35px;
-        height: 35px;
+        max-width: 35%;
+        max-height: 35%;
+        margin-right: 2%;
     }
 
     #secao_2 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
         height: 400px;
-        gap: 15px;
-        background: none;
-        align-content: space-evenly;
-    }
 
-    #titulo_secao-2 {
-        font-size: 2.5vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
-    }
-
-    #Background_2_android {
-        background-image: url(img/Background_2_android_version.Webp);
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        align-content: start;
-        height: 60%;
-        border-radius: 23px;
-        width: 94%;
-        margin: auto;
-        box-shadow: 1px 1.3px 2px rgba(0, 0, 0, 0.181);
     }
 
     #titulo_inferior_sc-2 {
@@ -802,12 +936,6 @@ footer {
         display: flex;
         justify-content: space-between;
         gap: 5%;
-
-    }
-
-    .vantagens-secao-2>img {
-        max-width: 45px;
-        max-width: 45px;
     }
 
     .vantagens-secao-2 {
@@ -816,28 +944,10 @@ footer {
         border-radius: 7px;
     }
 
-    .vantagens-secao-2>hr {
-        display: none;
-    }
-
-    .vantagens-secao-2>h3 {
-        font-size: 2.8vw;
-    }
-
-    .vantagens-secao-2>p {
-        font-size: 0.6em;
-
-    }
-
-    #vantagem-central_sc-2 {
-        border: none;
-    }
-
     #titulo-sc-3 {
         font-size: 0.7em;
         white-space: nowrap;
         height: 40px;
-
     }
 
     #titulo-sc-3::before,
@@ -848,7 +958,6 @@ footer {
     #last-section {
         width: 94%;
         margin-bottom: 10px;
-
     }
 
     .img-sc-3 {
@@ -868,7 +977,6 @@ footer {
 
     .miniseca-3-titulo>p {
         font-size: 1.7vw;
-
     }
 
     #email-registration-for-news {
@@ -876,7 +984,6 @@ footer {
         padding: 0px 3px 0px 0px;
         height: 20%;
         align-self: flex-start;
-
     }
 
 
@@ -901,7 +1008,6 @@ footer {
         white-space: nowrap;
         padding: 0px 0px 2px 0px;
         margin: 0px 0px 0px 3px;
-
     }
 
     footer {
@@ -912,7 +1018,6 @@ footer {
         height: 180px;
         align-items: center;
         align-content: center;
-
     }
 
     #about-us {
@@ -923,7 +1028,6 @@ footer {
         gap: 20px;
         align-items: baseline;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
     }
 
     #about-us_institutional {
@@ -933,7 +1037,6 @@ footer {
         gap: 5px;
         align-items: first baseline;
         justify-content: space-between;
-
     }
 
     #about-us_institutional>a {
@@ -946,7 +1049,6 @@ footer {
         width: 100%;
         justify-content: center;
         gap: 25px;
-
     }
 
     #about-us_icons>a>img {
@@ -959,6 +1061,14 @@ footer {
         font-size: 2.2vw;
         margin: 0;
     }
+
+
+
+}
+
+
+
+
 
 
 
